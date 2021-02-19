@@ -1,9 +1,11 @@
 <html>
 <body>
 
-<h1>PY2CP ad radio button test</h1>
+</body>>
 
-<form action="/action_page.php">
+<h1>PY2CP ad radio buttons test</h1>
+
+
   <p>Which of the following is the major inhibitory neurotransmitter in the
      brainstem and spinal chord?</p>
   <input type="radio" id="Glycine" name="answer" value="Glycine">
@@ -15,8 +17,37 @@
   <input type="radio" id="Enkephalin" name="answer" value="Enkephalin">
   <label for="Enkephalin">Enkephalin</label>
 
+<<h2>Questions in an array</h2>
 
-</form>
+<p id="show"></p>
+
+<script>
+
+  var questions = ["1. Which of the following is the major
+                  inhibitory neurotransmitter in the
+                  brainstem and spinal chord?",
+                  "2. Cocaine addiction is related to which brain area?",
+                  "3. Which neurotransmitter pathway projects through the
+                   prefrontal cortex?",
+                   "4. Which of the following is the main inhibitory
+                   neurotransmitter in the adult brain?",
+                   "5. Which of the following drugs do not affect the
+                   nucleus accumbens?",
+                   "6. Which of the following is a role of norepinephrine?"
+                   ];
+                   document.getElementById("show").innerHTML = questions;
+                   </script>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
