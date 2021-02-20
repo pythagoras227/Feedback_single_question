@@ -7,12 +7,8 @@
 
 
 
-  <!--
   <p id="question_p">Which of the following is the major inhibitory neurotransmitter in the
      brainstem and spinal chord?</p>
-   -->
-   <p id="question_p"></p>
-
   <input type="radio" id="Glycine" name="answer" value="Glycine">
   <label for="Glycine">Glycine</label><br>
   <input type="radio" id="Aspartate" name="answer" value="Aspartate">
@@ -33,7 +29,7 @@
       question: "2. which of the following is the major inhibitory neurotransmitter in the brainstem and spinal cord?",
       type: "radio", //use "checkbox" when there are multiple valid answers
       answer: [
-        "a) Glycine", \\correct
+        "a) Glycine", //correct
         "b) Asparte",
         "c) Dopamine,",
         "d) Enkephalin"
@@ -43,7 +39,7 @@
     {
       question: "4. Cocaine addiction is related to which brain area",
       type: "radio",
-      answer:["a) Nucleus Accumbens", \\correct
+      answer:["a) Nucleus Accumbens", //correct
               "b) Ventral Tegmental Area",
               "c) Frontal Cortex",
               "d) Ventral Pallidum"
@@ -54,7 +50,7 @@
       question: "5. Which neurotransmitter pathway projects through the prefrontal cortex?",
       type: "radio",
       answer:["a) The acetylcholine pathway",
-              "b) The dopamine pathway", \\correct
+              "b) The dopamine pathway", //correct
               "c) The norepinephrine pathway",
               "d) The serotonin pathway"
              ]
@@ -64,7 +60,7 @@
       question: "6. Which of the following is the main inhibitory neurotransmitter in the adult brain",
       type: "radio",
       answer: ["a) Glycine",
-               "b) GABA", \\correct
+               "b) GABA", //correct
                "c) Serotonin",
                "d) Acetylcholine"
               ]
@@ -76,7 +72,7 @@
       answer: ["a) Amphetamines",
                "b) Cocaine",
                "c) Cannabis",
-               "d) Nicotine" \\correct
+               "d) Nicotine" //correct
               ]
 
     },
@@ -85,7 +81,7 @@
       question: "12. Which of the following is a role of norepinephrine?",
       type: "radio"
       answer: ["a) Emotional processing",
-               "b) Psychosis", \\correct
+               "b) Psychosis", //correct
                "c) movement",
                "d) pain"
               ]
@@ -93,28 +89,42 @@
     }
 
 
-];
+                        ];
 
 var questions_checkbox = [
 
     {
       question: "1. Which of the following is not a small molecule transmitter? (2 correct answers)"
-      type: checkbox
+      type: "checkbox"
       answer: ["a) Histamine",
-               "b) Somatostatin", \\correct
+               "b) Somatostatin", //correct
                "c) Glutamate",
-               "d) Beta-endorphin" \\correct
+               "d) Beta-endorphin" //correct
+              ]
 
+    },
 
+    {
+      question: "3. Which of the following are not components of a neuron? (2 answers)"
+      type: "checkbox"
+      answer: ["a) Axon body", //correct
+               "b) Axon",
+               "c) Cell body",
+               "d) Dendrite terminal" //correct
+              ]
 
+    },
 
-      ]
+    {
+      question: "8. Which of these is not an example of a neuropeptide neurotransmitter? (2 answers)"
+      type: "checkbox"
+      answer: ["a) Vasopressin",
+               "b) Dopamine", //correct
+               "c) Serotonin", //correct
+               "d) Corticotropin releasing hormone"
+              ]
 
-
-
-
-
-  }
+    },
 
 
 ]
