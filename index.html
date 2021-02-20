@@ -1,13 +1,18 @@
 <html>
+
 <body>
 
-</body>
+
 <script src="jquery-3.5.1.min.js"></script>
 <h1>PY2CP ad radio buttons test</h1>
 
+  <p id="question_p">
+
+  <script> $("#question_p").html("hello world")
+
+  </script></p>
 
 
-  <p id="question_p"></p>
   <input type="radio" id="Glycine" name="answer" value="Glycine">
   <label for="Glycine">Glycine</label><br>
   <input type="radio" id="Aspartate" name="answer" value="Aspartate">
@@ -15,9 +20,9 @@
   <input type="radio" id="Dopamine" name="answer" value="Dopamine">
   <label for="Dopamine">Dopamine</label><br>
   <input type="radio" id="Enkephalin" name="answer" value="Enkephalin">
-  <label for="Enkephalin">Enkephalin</label>
+  <label for="Enkephalin">Enkephalin</label><br>
 
-<<h2>Questions in an array</h2>
+<h2>Questions in an array</h2>
 
 <p id="show"></p>
 
@@ -36,12 +41,13 @@
     },
 
     {
-      question: "4. Cocaine addiction is related to which brain area",
+      question: "4. Cocaine addiction is related to which brain area?",
       type: "radio",
-      answer:["a) Nucleus Accumbens", //correct
-              "b) Ventral Tegmental Area",
-              "c) Frontal Cortex",
-              "d) Ventral Pallidum"
+      answer:[
+        "a) Nucleus Accumbens", //correct
+        "b) Ventral Tegmental Area",
+        "c) Frontal Cortex",
+        "d) Ventral Pallidum"
              ]
     },
 
@@ -137,3 +143,4 @@ var questions_checkbox = [
 
 </body>
 </html>
+ //$('input[name="name_of_your_radiobutton"]:checked').val();
