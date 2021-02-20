@@ -24,48 +24,96 @@
 
 <script>
 
-  var questions = [
+  var questions_radio = [
     {
-      question: "1. which of the following is the major inhibitory neurotransmitter in the brainstem and spinal cord",
+      question: "2. which of the following is the major inhibitory neurotransmitter in the brainstem and spinal cord?",
       type: "radio", //use "checkbox" when there are multiple valid answers
       answer: [
-        "a) histamine",
-        "b) somatostatine",
-        "c) glutamine,",
-        "d) beta-endorphin"
-      ]
+        "a) Glycine", \\correct
+        "b) Asparte",
+        "c) Dopamine,",
+        "d) Enkephalin"
+        ]
     },
 
     {
-      question: "2. Cocaine addiction is related to which brain area",
-      answer: ["a) nucleus accumbens", "b) Ventral Tegmental Area", "c) Frontal Cortex", "d) The serotonin pathway"]
+      question: "4. Cocaine addiction is related to which brain area",
+      type: "radio",
+      answer:["a) Nucleus Accumbens", \\correct
+              "b) Ventral Tegmental Area",
+              "c) Frontal Cortex",
+              "d) Ventral Pallidum"
+             ]
     },
 
     {
-      question: "3. Which neurotransmitter pathway projects through the prefrontal cortex?",
-      answer:["a) The acetylcholine pathway", "b) The dopamine pathway", "c) The norepinephrine pathway", "d) The serotonin pathway"]
+      question: "5. Which neurotransmitter pathway projects through the prefrontal cortex?",
+      type: "radio",
+      answer:["a) The acetylcholine pathway",
+              "b) The dopamine pathway", \\correct
+              "c) The norepinephrine pathway",
+              "d) The serotonin pathway"
+             ]
     },
 
     {
-      question: "4. Which of the following is the main inhibitory neurotransmitter in the adult brain",
-      answer: ["a) Glycine", "b) GABA", "c) Serotonin", "d) Acetylcholine"]
-
-    }
-
-    {
-      question: "5. Which of the following drugs do not affect the nucleus accumbens?",
-      answer: ["a) Amphetamines", "b) Cocaine", "c) Cannabis", "d) Nicotine"]
-
-    }
+      question: "6. Which of the following is the main inhibitory neurotransmitter in the adult brain",
+      type: "radio",
+      answer: ["a) Glycine",
+               "b) GABA", \\correct
+               "c) Serotonin",
+               "d) Acetylcholine"
+              ]
+    },
 
     {
-      question: "6. Which of the following is a role of norepinephrine?",
-      answer: ["a) Emotional processing", "b) Psychosis", "c) movement", "d) pain"]
+      question: "7. Which of the following drugs do not affect the nucleus accumbens?",
+      type: "radio"
+      answer: ["a) Amphetamines",
+               "b) Cocaine",
+               "c) Cannabis",
+               "d) Nicotine" \\correct
+              ]
+
+    },
+
+    {
+      question: "12. Which of the following is a role of norepinephrine?",
+      type: "radio"
+      answer: ["a) Emotional processing",
+               "b) Psychosis", \\correct
+               "c) movement",
+               "d) pain"
+              ]
 
     }
 
 
 ];
+
+var questions_checkbox = [
+
+    {
+      question: "1. Which of the following is not a small molecule transmitter? (2 correct answers)"
+      type: checkbox
+      answer: ["a) Histamine",
+               "b) Somatostatin", \\correct
+               "c) Glutamate",
+               "d) Beta-endorphin" \\correct
+
+
+
+
+      ]
+
+
+
+
+
+  }
+
+
+]
 
                    document.getElementById("show").innerHTML = questions;
                    </script>
